@@ -10,13 +10,15 @@ typedef long long LL;
 
 int main()
 {
-    int n, max;
+    int n, num, max;
     LL move = 0;
 
     cin >> n;
-    vector <int> nums (n);
-    for (int i = 0; i < n; i++)
-        cin >> nums[i];
+    vector <int> nums;
+    for (int i = 0; i < n; i++) {
+        cin >> num;
+        nums.push_back(num);
+    }
     max = nums[0];
     for (int i = 1; i < n; i++) {
         if (nums[i] < max)
